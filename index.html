@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Решение квадратных уравнений</title>
+	<style>
+		html,body{
+			height: 100%;
+			margin: 0;
+		}
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#app{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#plot{
+			width: 550px;
+			height: 350px;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="app">
+		<div id="ur">
+			<p><h2>x<sup>2</sup> + <input type="number" v-model.number="a"> x + <input type="number" v-model.number="b"> = 0</h2></p>
+			<p><h2 >D = {{D}}</h2></p>
+			<p><h2>{{txt}}</h2></p>
+		</div>
+		<div id="plot"></div>
+	</div>
+	<script src="https://unpkg.com/vue@2.1.8/dist/vue.js"></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="https://wzrd.in/standalone/function-plot@1.17.0"></script>
+	<script src="script.js"></script>
+	
+</body>
+</html>
